@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SociallPill.astro";
+import GithubIcon from "../components/icons/GitHub.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GmailIcon from "../components/icons/Mail.astro";
+import BriefCaseIcon from "../components/icons/BriefCase.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/Section.astro";
+---
+
+<Layout
+  title="Portfolio de Samuel Rivera - Desarollador y Programador Web"
+  descriptions="Programador de Honduras apacionado en el mundo de la Tecnologia "
+>
+  <main>
+    <SectionContainer class="py-44 pb-24">
+      <img
+        class="rounded-full
+      size-12
+      w-30
+      h-12
+      mb-4"
+        src="https://avatars.githubusercontent.com/u/69124960?v=4"
+        alt=""
+      />
+      <h1 class="text-white text-4xl font-bold flex flex-row gap-x-4 pb-4">
+        Hey Soy Samuel Rivera <a
+          href="https://www.linkedin.com/in/samuel-rivera-web-developer-junio/"
+          target="blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para ser Trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl opacity-80 text-wrap">
+        Desarrollador Web, FullStack con NodeJs y React, de San Pedro
+        Sula/Honduras.
+      </h2>
+
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill href="https://github.com/Samuel-RM">
+          <GithubIcon class="size-6" />
+          GitHuB
+        </SocialPill>
+        <SocialPill
+          href="https://www.linkedin.com/in/samuel-rivera-web-developer-junio/"
+        >
+          <LinkedInIcon class="size-6" />
+          LinkIn
+        </SocialPill>
+        <SocialPill href="">
+          <GmailIcon class="size-6" />
+          Correo
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 item center">
+        <BriefCaseIcon class="size-7" />
+        Experiencia Laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+  </main>
+  <ul></ul>
+</Layout>
